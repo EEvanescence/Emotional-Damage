@@ -825,7 +825,7 @@ async function handleDNSQuery(udpChunk, webSocket, protocolResponseHeader, log) 
 	// no matter which DNS server client send, we alwasy use hard code one.
 	// beacsue someof DNS server is not support DNS over TCP
 	try {
-		const dnsServer = '8.8.4.4'; // change to 1.1.1.1 after cf fix connect own ip bug
+		const dnsServer = 'https://1.1.1.1/dns-query'; // change to 1.1.1.1 after cf fix connect own ip bug
 		const dnsPort = 53;
 		/** @type {ArrayBuffer | null} */
 		let vlessHeader = protocolResponseHeader;
